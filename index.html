@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahab Apps</title>
+<meta name="description" content="iOS apps by Sahab — Canvas Painting Studio, Coloring Book, Fit Pro, and Calorix AI Food Scanner.">
+<style>
+  :root {
+    --bg: #0b0d12;
+    --bg-elevated: #12151c;
+    --border: #232733;
+    --text: #eef0f4;
+    --text-dim: #9aa1b0;
+    --accent: #5b8cff;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f7f7f9;
+      --bg-elevated: #ffffff;
+      --border: #e4e5ea;
+      --text: #14161c;
+      --text-dim: #63677a;
+      --accent: #3a66d6;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12;
+    --bg-elevated: #12151c;
+    --border: #232733;
+    --text: #eef0f4;
+    --text-dim: #9aa1b0;
+    --accent: #5b8cff;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+  }
+
+  header {
+    padding: 64px 16px 32px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  header p {
+    color: var(--text-dim);
+    margin: 0;
+    font-size: 16px;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 8px 16px 64px;
+    display: grid;
+    gap: 16px;
+  }
+
+  .app-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 16px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .app-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+  }
+  .app-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+  }
+  .app-info {
+    flex: 1;
+    min-width: 0;
+  }
+  .app-info h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .app-info p {
+    font-size: 14px;
+    color: var(--text-dim);
+    margin: 0;
+    line-height: 1.4;
+  }
+  .app-cta {
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+  @media (max-width: 480px) {
+    .app-cta { display: none; }
+    header h1 { font-size: 26px; }
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 16px 48px;
+    color: var(--text-dim);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Sahab Apps</h1>
+  <p>iOS apps for creativity, fitness, and everyday life</p>
+</header>
+
+<main>
+
+  <a class="app-card" href="https://apps.apple.com/eg/app/canvas-painting-studio/id6806272894" target="_blank" rel="noopener">
+    <img class="app-icon" src="icons/canvas.png" alt="Canvas Painting Studio icon">
+    <div class="app-info">
+      <h2>Canvas Painting Studio</h2>
+      <p>A watercolor, ink, and oil painting studio for iPhone and iPad.</p>
+    </div>
+    <span class="app-cta">App Store ›</span>
+  </a>
+
+  <a class="app-card" href="https://apps.apple.com/eg/app/coloring-book-for-all-ages/id1110030058" target="_blank" rel="noopener">
+    <img class="app-icon" src="icons/coloringbook.png" alt="Coloring Book: For All Ages icon">
+    <div class="app-info">
+      <h2>Coloring Book: For All Ages</h2>
+      <p>Relaxing coloring pages with smooth fill tools for every age.</p>
+    </div>
+    <span class="app-cta">App Store ›</span>
+  </a>
+
+  <a class="app-card" href="https://apps.apple.com/eg/app/fit-pro-home-gym-workouts/id6517347430" target="_blank" rel="noopener">
+    <img class="app-icon" src="icons/fitpro.png" alt="Fit Pro: Home & Gym Workouts icon">
+    <div class="app-info">
+      <h2>Fit Pro: Home &amp; Gym Workouts</h2>
+      <p>Guided workout routines for training at home or at the gym.</p>
+    </div>
+    <span class="app-cta">App Store ›</span>
+  </a>
+
+  <a class="app-card" href="https://apps.apple.com/eg/app/calorix-ai-food-scanner/id6808792931" target="_blank" rel="noopener">
+    <img class="app-icon" src="icons/calorix.png" alt="Calorix: AI Food Scanner icon">
+    <div class="app-info">
+      <h2>Calorix: AI Food Scanner</h2>
+      <p>Scan your meals with AI to track calories and nutrition instantly.</p>
+    </div>
+    <span class="app-cta">App Store ›</span>
+  </a>
+
+</main>
+
+<footer>
+  &copy; 2026 Sahab Apps
+</footer>
+
+</body>
+</html>
